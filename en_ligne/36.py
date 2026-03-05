@@ -8,7 +8,7 @@ class Personne:
 
 class Salarie(Personne):
     def __init__(self, nom, age, numSum, salaire):
-        Personne.__init__(nom, age) #herite de class parent
+        Personne.__init__(self,nom, age) #herite de class parent
         self.numSum= numSum
         self.salaire = salaire
 
@@ -21,7 +21,7 @@ class Salarie(Personne):
 
 class Etudiant(Personne):
     def __init__(self, nom, age, cne, notes):
-        Personne.__init__(nom, age)
+        Personne.__init__(self,nom, age)
         self.cne = cne
         self.notes = notes # Liste de notes
 
